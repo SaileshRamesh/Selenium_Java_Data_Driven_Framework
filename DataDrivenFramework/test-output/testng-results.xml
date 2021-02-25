@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="163902" started-at="2021-01-07T12:26:54Z" finished-at="2021-01-07T12:29:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="163902" started-at="2021-01-07T12:26:54Z" finished-at="2021-01-07T12:29:38Z">
+      <class name="com.datadriven.framework.test.LoginTest.LoginTest">
+        <test-method status="PASS" signature="testOne(java.util.Hashtable)[pri:0, instance:com.datadriven.framework.test.LoginTest.LoginTest@1d16f93d]" name="testOne" duration-ms="59945" started-at="2021-01-07T17:56:55Z" data-provider="getTestOneData" finished-at="2021-01-07T17:57:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Year=1999.0, TypeRent=2.0, Phone=1.4842634683E10, Month=4.0, AptNo=132.0, Zipcode=12401.0, Email=Johnsmith@gmail.com, Date=2.0, PageTitle=Liberty Mutual | Customize your insurance coverage and get a quote | Liberty Mutual, LastName=Smith, StreetAdd=132, My Street, Kingston, New York 12401., FirstName=John, ValueStuf=5000.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.datadriven.framework.test.LoginTest.LoginTest@1d16f93d]" name="afterTest" is-config="true" duration-ms="2" started-at="2021-01-07T17:57:55Z" finished-at="2021-01-07T17:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="testTwo(java.util.Hashtable)[pri:0, instance:com.datadriven.framework.test.LoginTest.LoginTest@1d16f93d]" name="testTwo" duration-ms="28535" started-at="2021-01-07T17:57:55Z" data-provider="getTestOneData" finished-at="2021-01-07T17:58:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Year=1999.0, TypeRent=2.0, Phone=1.4842634683E10, Month=4.0, AptNo=132.0, Zipcode=12401.0, Email=Johnsmith@gmail.com, Date=2.0, PageTitle=Liberty Mutual | Customize your insurance coverage and get a quote | Liberty Mutual, LastName=Smith, StreetAdd=132, My Street, Kingston, New York 12401., FirstName=John, ValueStuf=5000.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwo -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.datadriven.framework.test.LoginTest.LoginTest@1d16f93d]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-01-07T17:58:23Z" finished-at="2021-01-07T17:58:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="FAIL" signature="testThree(java.util.Hashtable)[pri:0, instance:com.datadriven.framework.test.LoginTest.LoginTest@1d16f93d]" name="testThree" duration-ms="67848" started-at="2021-01-07T17:58:24Z" data-provider="getTestOneData" finished-at="2021-01-07T17:59:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Year=1999.0, TypeRent=2.0, Phone=1.4842634683E10, Month=4.0, AptNo=132.0, Zipcode=12401.0, Email=Johnsmith@gmail.com, Date=2.0, PageTitle=Liberty Mutual | Customize your insurance coverage and get a quote | Liberty Mutual, LastName=Smith, StreetAdd=132, My Street, Kingston, New York 12401., FirstName=John, ValueStuf=5000.0}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Cannot locate option with value: 4
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PCIN480905', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Cannot locate option with value: 4
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PCIN480905', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: unknown
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.datadriven.framework.base.BaseUI.reportFail(BaseUI.java:286)
+	at com.datadriven.framework.base.BaseUI.SelectElementInList(BaseUI.java:134)
+	at com.datadriven.framework.test.LoginTest.LoginTest.testThree(LoginTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThree -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.datadriven.framework.test.LoginTest.LoginTest@1d16f93d]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-01-07T17:59:32Z" finished-at="2021-01-07T17:59:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.datadriven.framework.test.LoginTest.LoginTest@1d16f93d]" name="endReport" is-config="true" duration-ms="6426" started-at="2021-01-07T17:59:32Z" finished-at="2021-01-07T17:59:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.datadriven.framework.test.LoginTest.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
